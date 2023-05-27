@@ -1,0 +1,11 @@
+mp=input('enter the mass of piston: ');
+r=input('enter radius of crank: ');
+w=input('enter speed of rotation: ');
+l=input('enter length of connecting rod: ');
+n=l/r;
+t=0:0.1:360;
+Fip=mp*r*w^2*(cosd(t)+(cosd(2*t))/n);
+plot(t,Fip);
+xlabel('theta');
+ylabel('Fip');
+title('PLOT OF THETA VS FIP');
